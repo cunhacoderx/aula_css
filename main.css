@@ -1,0 +1,100 @@
+*{  /* reset de página*/
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body > header {   /* aqui temos a tag body que é "Pai" da header*/
+    background-color: #002F6C;
+    padding: 16px;
+    color: #FFFFFF;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+}
+header .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+header li {
+    display: inline;
+}
+header li a {
+    color: #ffffff;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    text-decoration: none;
+    margin-left: 16px;
+}
+.container {  /*usamos ponto (.) para puxar as Id's */
+    width: 1366px;
+    margin: 0 auto;
+}
+.articles {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.articles article img {
+    width: 100%;
+}
+.articles article {
+    width: 30%;
+}
+section {
+    padding: 16px;
+}
+section h2,
+.articles article {
+    margin-bottom: 16px;
+}
+.articles article h3 {
+    padding: 8px;
+    margin-bottom: 8px;
+}
+.articles article a {
+    color: #FFFFFF;
+    padding: 6px;
+    display: inline-block;
+    text-decoration: none;
+    font-weight: bold;
+    margin-top: 8px;
+}
+.articles article a:hover {
+    text-decoration: underline;
+}
+.articles article p,
+.articles article a {
+    font-family: Arial, Helvetica, sans-serif
+}
+.articles article h3 {
+    font-size: 24px;
+    font-family: Arial, Helvetica, sans-serif
+}
+section h2 {
+    font-size: 32px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+#sports { /* usamos hashtag (#) para puxarmos as tags*/
+    background-color: rgba(3, 68, 248, 0.164);
+}
+#sports .articles article a {
+    background-color: blue;
+}
+#economy {
+    background-color: rgba(212, 175, 55, 0.1)
+}
+#economy .articles article a {
+    background-color:#D4AF37
+}
+#entertainment {
+    background-color: rgba(29, 185, 84, 0.1);
+}
+#entertainment .articles article a {
+    background-color: #1DB954;
+}
+#tecnology {
+    background-color: rgba(138, 43, 266, 0.1);
+}
+#tecnology .articles article a {
+    background-color: #8A2BE2;
+}
